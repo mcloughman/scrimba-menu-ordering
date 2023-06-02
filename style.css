@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Smythe", serif;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 170px;
+  background-image: url("burger.png");
+  color: white;
+  padding: 10px;
+}
+.header > * {
+  margin-left: 46px;
+}
+
+.header h2 {
+  margin-top: 56px;
+  margin-bottom: 5px;
+  font-size: 39px;
+  font-weight: 400;
+}
+
+.header p {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.menu {
+  width: 90%;
+  margin: 20px auto;
+}
+.menu-container {
+  height: 140px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  margin: 50px auto;
+  border-bottom: 2px solid lightgray;
+}
+
+.emoji {
+  font-size: 90px;
+  padding-top: 0;
+  margin-top: 0;
+  position: relative;
+  top: -18px;
+}
+/* I just couldn't get the hamburger emoji to behave like the others. Desperate times call for desperate measures */
+#emoji-1 {
+  position: relative;
+  top: -26px;
+}
+
+.name {
+  font-size: 28px;
+  margin-bottom: 9px;
+}
+
+.add-btn {
+  margin-left: auto;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  background-color: white;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.ingredients {
+  opacity: 0.6;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.order {
+  width: 90%;
+  margin: 10px auto;
+}
+.order h3 {
+  text-align: center;
+}
+
+.order-container {
+  display: flex;
+  font-size: 28px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.remove-btn {
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.order-price {
+  font-size: 20px;
+}
+
+.order-total {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 28px;
+}
+
+.order-total .total-price {
+  font-size: 20px;
+}
+.complete-order-btn {
+  width: 90%;
+  display: block;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: #16db99;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+.payment-modal h3 {
+  margin-top: 20px;
+}
+
+.payment-modal {
+  background: white;
+  z-index: 1;
+  position: absolute;
+  top: 295px;
+  left: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 524px;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.payment-modal input {
+  margin: 10px 24px;
+  height: 50px;
+  width: 400px;
+  padding-left: 25px;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 1px solid lightgray;
+}
+.pay-btn {
+  height: 50px;
+  width: 400px;
+  background-color: #16db99;
+  color: white;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+.container-background {
+  background: #f5f5f5;
+}
+
+.thank-you {
+  background: #ecfdf5;
+  text-align: center;
+  padding: 15px;
+  font-size: 28px;
+}

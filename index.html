@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&family=Smythe&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Jimmy's Diner</h2>
+            <p>The best burgers and pizzas in town.</p>
+        </header>
+        <main class="main">
+            <section class="menu" id="menu-section">
+
+
+            </section>
+
+            <section class="order" id="order-status-section">
+                <h3 class="hidden">Your Order:</h3>
+            </section>
+            <section class="order-total hidden" id="order-total">Total Price:
+
+            </section>
+            <button class="complete-order-btn hidden">Complete Order</button>
+
+        </main>
+        <form action="" class="payment-modal hidden">
+            <h3>Enter card details</h3>
+            <input type="text" placeholder="Enter your name" id="name-input" required>
+            <input type="text" placeholder="Enter your card number" required>
+            <input type="text" placeholder="Enter CVV" required>
+            <button class="pay-btn">Pay</button>
+        </form>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
